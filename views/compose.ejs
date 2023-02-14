@@ -1,0 +1,22 @@
+<%- include('partials/header'); -%>
+<h1 style="text-align: center;" class="my-4">Add Journal</h1>
+<div class="container">
+  <form class="p-3" action="/compose" method="post">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+    </div>
+    <div class="mb-3">
+      <label for="textArea" class="form-label">Post</label>
+      <textarea class="form-control" id="textArea" rows="3" name="textArea" placeholder="Write Your Post"></textarea>
+    </div>
+    <div class="mb-3 row ">
+
+      <div class="offset-sm-5 my-3 col-sm-8  justify-content-start">
+        <button type="submit" class="btn btn-primary">Add Journal</button>
+      </div>
+    </div>
+  </form>
+</div>
+<hr class="my-5" />
+<%- include('partials/footer'); -%>

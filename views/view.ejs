@@ -1,0 +1,41 @@
+<%- include('partials/header'); -%>
+
+
+<h1 style="text-align: center;" class="my-5">Published Journals.</h1>
+
+<div class="container">
+  <div class="row justify-content-start  g-2">
+    <div class="col-12">
+      <%- startingContent %>
+
+    </div>
+  </div>
+</div>
+<div class="my-4 mx-5">
+  <% posts.forEach(element => { %>
+  <div class="my-4 mx-5">
+
+
+    <h1><%- element.title %> </h1>
+    <%- element.content.length>100 ? element.content.substring(0, 100)+"..." : element.content %>
+
+    <% if (element.content.length>100) { %>
+
+
+    <a href="/posts/<%-element.title%>">Read More</a>
+
+    <% } %>
+  </div>
+  <% }) %>
+</div>
+<div style="height: 100px;"></div>
+<hr style=" margin: 0 auto;width: 7%;
+border-style: dotted none none;
+border-width: 10px;
+border-color: black;
+background-color: white;
+" class="my-4">
+<div style="height: 200px;">
+
+</div>
+<%- include('partials/footer'); -%>

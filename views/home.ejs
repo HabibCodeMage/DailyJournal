@@ -1,0 +1,87 @@
+<%- include('partials/header'); -%>
+<!--Main layout-->
+<main class="mt-5">
+  <div class="container">
+    <!--Section: Content-->
+    <section>
+      <div class="row">
+        <div class="col-md-6 gx-5 mb-4">
+          <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+            <img src="/static/images/home.jpg" class="img-fluid" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 gx-5 mb-4" id="intro">
+          <h4><strong>Daily Journal</strong></h4>
+          <p class="text-muted">
+            Daily journaling is the practise of reflecting on your life and recording it in writing. Hardly anything more or less. It's surprisingly easy to accomplish and incredibly effective, yet very few people actually do it.
+          </p>
+          <p><strong>You will be charged for Your Journals?</strong></p>
+          <p class="text-muted">
+            No! It's absolutely Free to publish your journals.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Section: Content-->
+
+    <hr class="my-5" />
+
+    <!--Section: Content-->
+    <section class="text-center">
+      <h4 class="mb-5"><strong>Journals</strong></h4>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="/static/images/add.jpg" style="width: 90%; height: 400px; " />
+              <a href="/compose">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Add Journals</h5>
+              <p class="card-text">
+                Add the journal details and enjoy your post share it.
+              </p>
+
+              <a href="/compose" class="btn btn-primary btn-rounded">Add Journal</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6  mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="static/images/view.png" style="width: 90%; height: 400px;" />
+              <a href="/view">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">View Journals</h5>
+              <p class="card-text">
+                View all the Journals added to Daily Journals.
+              </p>
+              <a href="/view" class="btn btn-primary btn-rounded">View Journal</a>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--Section: Content-->
+
+    <hr class="my-5" />
+
+
+    <!--Section: Content-->
+  </div>
+</main>
+<!--Main layout-->
+<%- include('partials/footer'); -%>
